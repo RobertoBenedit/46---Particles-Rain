@@ -82,4 +82,11 @@ animate();
 window.addEventListener("resize", () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+    titleMeasurement = titleElement.getBoundingClientRect();
+    title = {
+        x: titleMeasurement.left,
+        y: titleMeasurement.top,
+        width: titleMeasurement.width,
+        height: 10,
+    };
 });
